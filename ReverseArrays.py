@@ -1,10 +1,5 @@
 import math
 
-
-# Add any extra import statements you may need here
-
-
-# Add any helper functions you may need here
 def reversePart(array, start_index):
     newArray = []
     index = start_index
@@ -22,7 +17,6 @@ def reversePart(array, start_index):
 
 
 def are_they_equal(array_a, array_b):
-    # Write your code here
     flag = False
     for i in range(len(array_b)):
         reversedArray = reversePart(array_b, i)
@@ -34,8 +28,7 @@ def are_they_equal(array_a, array_b):
         return False
 
 
-# These are the tests we use to determine if the solution is correct.
-# You can add your own at the bottom, but they are otherwise not editable!
+# Tests
 def printString(string):
     print('[\"', string, '\"]', sep='', end='')
 
@@ -76,4 +69,3 @@ if __name__ == "__main__":
     output_2 = are_they_equal(a_2, b_2)
     check(expected_2, output_2)
 
-    # Add your own test cases here
